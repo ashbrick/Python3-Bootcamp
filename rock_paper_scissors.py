@@ -13,5 +13,19 @@ print("SHOOT!")
 # player1 winning scenarios
 if player1 == 'rock' and player2 == 'scissors':   
     print("Player 1 wins!")
-else:
+elif player1 == 'paper' and player2 == 'rock':
+    print("Player 1 wins!")
+elif player1 == 'scissors' and player2 == 'paper':
+    print("Player 1 wins!")
+
+# player 2 winning scenarios
+elif player1 == 'paper' and player2 == 'scissors':
     print("Player 2 wins!")
+elif player1 == 'rock' and player2 == 'paper':
+    print("Player 2 wins!")
+elif player1 == 'scissors' and player2 == 'rock':
+    print("Player 2 wins!")
+
+# tie scenarios
+else:
+    print("You tied... play again")
